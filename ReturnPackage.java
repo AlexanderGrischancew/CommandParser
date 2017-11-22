@@ -1,5 +1,3 @@
-package Commands;
-
 public class ReturnPackage {
 
     private String message = null;

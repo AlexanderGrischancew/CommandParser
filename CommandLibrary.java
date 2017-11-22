@@ -1,5 +1,3 @@
-package Commands;
-
 import java.util.Map;
 
 public class CommandLibrary {

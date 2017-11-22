@@ -1,5 +1,3 @@
-package Commands;
-
 public class ExitCommand extends AbstractCommand{
 
     @Override

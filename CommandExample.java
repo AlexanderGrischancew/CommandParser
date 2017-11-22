@@ -1,6 +1,3 @@
-import Commands.CommandLibrary;
-import Commands.ReturnPackage;
-
 public class CommandExample {
 
     private static boolean run = true;
@@ -41,11 +38,11 @@ public class CommandExample {
 
         if (returnPackage.isError() && !returnPackage.getMessage().equals("")) {
             for (String line : messageLines) {
-                Terminal.printError(line.trim());
+                //output
             }
         } else if (!returnPackage.isError() && !returnPackage.getMessage().equals("")) {
             for (String line : messageLines) {
-                Terminal.printLine(line.trim());
+                //output
             }
         }
 
