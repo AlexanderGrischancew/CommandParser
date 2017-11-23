@@ -3,7 +3,7 @@
 This is a general purpose Structure to procees user inputed commands.
 This structure is aimed at the final programing task for the programing 1 lecure at the KIT.
 
-Usualy both task need a command parser, this is a structure that can be used independet from the explicit task to (easysyaly) recognize if a command exists and the given parameters are correct.
+Usualy both task need a command parser, this is a structure that can be used independet from the explicit task to easily recognize if a command exists and the given parameters are correct.
 
 ## Usage
 
