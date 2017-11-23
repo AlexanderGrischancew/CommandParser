@@ -8,7 +8,7 @@ public class CommandExample {
         while(run){
 
             //READ INPUT
-            String input = "quit";
+            String input = "";
             //----------
 
             printReturnPackage(commandLibrary.executeCommand(input));
@@ -38,11 +38,11 @@ public class CommandExample {
 
         if (returnPackage.isError() && !returnPackage.getMessage().equals("")) {
             for (String line : messageLines) {
-                //output
+                //output as error
             }
         } else if (!returnPackage.isError() && !returnPackage.getMessage().equals("")) {
             for (String line : messageLines) {
-                //output
+                //output as information
             }
         }
 
