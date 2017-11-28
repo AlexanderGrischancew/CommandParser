@@ -5,11 +5,11 @@ This structure is aimed at the final programing task for the programing 1 lectur
 Usualy both task need a command parser, this is a structure that can be used independent from the explicit task to easily recognize if a command exists and the given parameters are correct.
 
 ## Usage
-#####Implement new Commands
+##### Implement new Commands
 
-#####Init a new CommandLibrary
+##### Init a new CommandLibrary
 CommandLibrary commandLibrary = new CommandLibrary();
-#####Add Commands
+##### Add Commands
 Commands can be added using
 CommandLibrary.addCommand(Command);
 
@@ -21,7 +21,7 @@ This way the setup can be executed via:
 as seen in CommandsExample.
 This way all Commands disregarding their amount. In addition all Commands have their own place for easy editing.
 
-#####Parse user input / execute Commands
+##### Parse user input / execute Commands
 
 
 
