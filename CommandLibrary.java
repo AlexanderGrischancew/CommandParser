@@ -1,5 +1,13 @@
 import java.util.Map;
 
+/**
+ * Main Class of the CommandLibrary Structure.
+ *
+ * This Class holds all the Commands and handles the parsing and execution of user input.
+ *
+ * @author Alexander Grischancew
+ */
+
 public class CommandLibrary {
 
     //The commands are stored in a RegexTreeMap
