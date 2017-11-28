@@ -11,6 +11,11 @@ And a suffix containing the parameters "sample.txt"
 ## Usage
 ##### Implement new Commands
 
+New Commands need to extend the AbstractCommand or implement the Command interface.
+Therefore the ```Command.execute(String input)``` has to be implemented.
+
+The ```execute()``` contains all the code and functionality of the command.  
+
 ##### Init a new CommandLibrary
 ```Java
 CommandLibrary commandLibrary = new CommandLibrary();
@@ -44,7 +49,14 @@ To just parse the user input ```CommandsLibrary.getCommand("<userinput>");``` ca
 To parse the user input and execute the corresponding command ```CommandsLibrary.executeCommand("<userinput>");``` is used, this will return a ReturnPackage (see chapter ReturnPackage).
 
 ##### ReturnPackages
+ReturnPackages are used as a unified Return for all Commands.
+They carry three parameters:
+```message``` is the String of the package containing an error message or a generic message.
+```isError``` is the flag set to indicate if the Command executed successfully and the returned String is normal output or if the Command failed and the String is a error message.
+```exitFlag``` is the flag set to indicate whether the main loop should exit after receiving this package.
 
+The ```exitFlag``` is used because the final task dont allow the usage of ```system.exit()``` or similar commands. 
+ 
 ## How it works
 
 ## DISCLAIMER
