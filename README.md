@@ -40,8 +40,10 @@ NEW_COMMAND("<command prefix>","<command suffix>",new NewCommand());
 newCommand() ist the corressponding Class for the command
 
 ##### Parse user input / execute Commands
+To just parse the user input ```CommandsLibrary.getCommand("<userinput>");``` can be used, it will return the Command corresponding to the user input or the InvalidCommand class if no Command in the CommandLibrary matches th user input.
+To parse the user input and execute the corresponding command ```CommandsLibrary.executeCommand("<userinput>");``` is used, this will return a ReturnPackage (see chapter ReturnPackage).
 
-
+##### ReturnPackages
 
 ## How it works
 
