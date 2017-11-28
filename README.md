@@ -8,16 +8,22 @@ Usualy both task need a command parser, this is a structure that can be used ind
 ##### Implement new Commands
 
 ##### Init a new CommandLibrary
+```Java
 CommandLibrary commandLibrary = new CommandLibrary();
+```
 ##### Add Commands
+```Java
 Commands can be added using
 CommandLibrary.addCommand(Command);
+```
 
 To escape a long list of addCommands() in the setup of the CommandLibrary Commands should be added to the CommandsEnum. 
 This way the setup can be executed via:
-        for(CommandsEnum commandEnumCommand: CommandsEnum.values()){
-            commandLibrary.addCommand(commandEnumCommand.getCommandRegex(),commandEnumCommand.getCommand());
-        }
+```Java
+for(CommandsEnum commandEnumCommand: CommandsEnum.values()){
+    commandLibrary.addCommand(commandEnumCommand.getCommandRegex(),commandEnumCommand.getCommand());
+}
+```
 as seen in CommandsExample.
 This way all Commands disregarding their amount. In addition all Commands have their own place for easy editing.
 
