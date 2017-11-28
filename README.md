@@ -3,7 +3,11 @@
 This is a general purpose Structure to process user input commands.
 This structure is aimed at the final programing task for the programing 1 lecture at the KIT.
 
+<<<<<<< HEAD
 Usualy both task need a command parser, this is a structure that can be used independent from the explicit task to easily recognize if a command exists and the given parameters are correct.
+=======
+Usualy both task need a command parser, this is a structure that can be used independet from the explicit task to easily recognize if a command exists and the given parameters are correct.
+>>>>>>> f8d064a502f15fa334513c01cd30de86ef3a6460
 
 ## Usage
 #####Implement new Commands
