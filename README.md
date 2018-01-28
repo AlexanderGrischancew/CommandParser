@@ -4,7 +4,7 @@ This is a general purpose Structure to process user input commands.
 This structure is aimed at the final programing task for the programing 1 lecture at the KIT.
 Usualy both task need a command parser, this is a structure that can be used independent from the explicit task to easily recognize if a command exists and the given parameters are correct.
 
-Commands consist of the prefix eg. add
+Commands consist of the prefix eg. "add"
 A space 
 And a suffix containing the parameters "sample.txt"
 
